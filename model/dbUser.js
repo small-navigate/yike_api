@@ -1,7 +1,6 @@
 const mongoose = require('mongoose')
-
 // 用户表
-const SchemaUser = new Schema({
+let SchemaUser = new mongoose.Schema({
   username: String, //用户名
   password: String, //密码
   email: String, //邮箱
@@ -16,8 +15,8 @@ const SchemaUser = new Schema({
     type: String,
     default: 'user.png'
   }, //用户头像
-  time: Date, //用户头像
+  time: Date, //注册时间
 })
 
-
-module.exports = SchemaUser
+let User = mongoose.model('User', SchemaUser)
+module.exports = User

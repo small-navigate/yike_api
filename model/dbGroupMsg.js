@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const Schema = mongoose.Schema
 //群消息表
 const SchemaGroupMsg = new Schema({
   GroupID: {

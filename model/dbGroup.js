@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const Schema = mongoose.Schema
 //群表
 const SchemaGroup = new Schema({
   userID: {

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const Schema = mongoose.Schema
 //一对一消息表
 const SchemaMsssage = new Schema({
   userID: {
